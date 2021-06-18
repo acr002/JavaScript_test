@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Apply JavaScript example</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(){
+        function createParagraph() {
+          let para = document.createElement('p');
+          para.textContent = 'hi!!';
+          document.body.appendChild(para);
+        }
+        const buttons = document.querySelectorAll('button');
+        for(let i = 0; i < buttons.length ; i++) {
+          buttons[i].addEventListener('click', createParagraph);
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <a href="index2.html"><p>index2</p></a>
+    <button>Click me</button>
+    <button>Click me1</button>
+    <button>Click me2</button>
+    <button>Click me3</button>
+    <button>Click me4</button>
+    <button>Click me5</button>
+  </body>
+</html>
+
